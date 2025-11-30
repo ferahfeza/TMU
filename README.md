@@ -9,8 +9,7 @@ Usulzen, Türk Sanat Musikisi usullerini (ritimlerini) görsel ve işitsel olara
 - **Klasik Usul Kütüphanesi:** Sofyan, Düyek, Aksak, Devr-i Revan gibi temel usulleri dinleyin ve izleyin.
 - **Görsel Ritim Haritası:** Vuruşların zaman çizelgesi üzerinde renkli ve anlaşılır gösterimi.
 - **Ton Ayarları:** Düm (Sağ el) ve Tek (Sol el) seslerinin frekanslarını (Hz) anlık olarak ayarlayabilme.
-- **Stüdyo Modu (Manuel Besteleme):** Kendi usulünüzü vuruş vuruş oluşturun, kaydedin ve oynatın.
-- **Kudüm/Diz Vuruşu Simülasyonu:** Vuruşların hangi elle (sağ/sol) yapıldığını simüle eden görselleştirme (Ayna modu destekli).
+- **Stüdyo Modu (Manuel Usul Oluşturma):** Kendi usulünüzü vuruş vuruş oluşturun ve oynatın. Yeni usul eklemek için *contents.ts* dosyası içinde uygun formatta manuel olarak ekleme yapmalısınız.
 
 ## Kurulum ve Çalıştırma
 
@@ -18,7 +17,7 @@ Bu projeyi yerel bilgisayarınızda çalıştırmak için:
 
 1.  **Depoyu Klonlayın:**
     ```bash
-    git clone https://github.com/KULLANICI_ADINIZ/usulzen.git
+    git clone https://github.com/ferahfeza/usulzen.git
     cd usulzen
     ```
 

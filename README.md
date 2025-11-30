@@ -2,7 +2,7 @@
 
 Usulzen, Türk Sanat Musikisi usullerini (ritimlerini) görsel ve işitsel olarak keşfetmek, analiz etmek ve öğrenmek için tasarlanmış interaktif bir web uygulamasıdır.
 
-![Usulzen Preview](https://via.placeholder.com/800x450?text=Usulzen+Preview)
+![Usulzen Preview](preview.png)
 
 ## Özellikler
 

@@ -4,6 +4,13 @@ Usulzen, Türk Sanat Musikisi usullerini (ritimlerini) görsel ve işitsel olara
 
 ![Usulzen Preview](preview.png)
 
+## Proje Videosu
+
+https://github.com/user-attachments/assets/your-video-id-here
+
+<!-- Video dosyasını yüklemek için: README'yi düzenlerken video dosyasını buraya sürükleyip bırakın -->
+<!-- Alternatif olarak: YouTube videosu için https://www.youtube.com/watch?v=VIDEO_ID formatında link ekleyin -->
+
 ## Özellikler
 
 - **Klasik Usul Kütüphanesi:** Sofyan, Düyek, Aksak, Devr-i Revan gibi temel usulleri dinleyin ve izleyin.

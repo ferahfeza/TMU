@@ -6,7 +6,7 @@ Usulzen, Türk Sanat Musikisi usullerini (ritimlerini) görsel ve işitsel olara
 
 ## Proje Videosu
 
-https://github.com/ferahfeza/site-preview/Usulzen.mp4
+[https://github.com/ferahfeza/site-preview/Usulzen.mp4](https://github.com/ferahfeza/TMU/tree/main/site-preview)
 
 <!-- Video dosyasını yüklemek için: README'yi düzenlerken video dosyasını buraya sürükleyip bırakın -->
 <!-- Alternatif olarak: YouTube videosu için https://www.youtube.com/watch?v=VIDEO_ID formatında link ekleyin -->

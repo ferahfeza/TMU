@@ -6,14 +6,11 @@ Usulzen, Türk Sanat Musikisi usullerini (ritimlerini) görsel ve işitsel olara
 
 ## Proje Videosu
 
-<!-- README.md içine ekleyin -->
-<video controls width="640" poster="site-preview/preview.png">
-  <source src="https://raw.githubusercontent.com/ferahfeza/TMU/main/site-preview/Usulzen.mp4" type="video/mp4">
-  Bu tarayıcı video etiketini desteklemiyor. Videoyu <a href="https://raw.githubusercontent.com/ferahfeza/TMU/main/site-preview/Usulzen.mp4">buradan</a> izleyebilirsiniz.
-</video>
+<!-- Inline <video> blokları bazen GitHub README görüntülemesinde çalışmayabilir. Güvenilir gösterim için aşağıdaki tıklanabilir önizlemeyi kullanın. -->
 
-<!-- Video dosyasını yüklemek için: README'yi düzenlerken video dosyasını buraya sürükleyip bırakın -->
-<!-- Alternatif olarak: YouTube videosu için https://www.youtube.com/watch?v=VIDEO_ID formatında link ekleyin -->
+[![Usulzen Video Preview](site-preview/preview.png)](https://raw.githubusercontent.com/ferahfeza/TMU/main/site-preview/Usulzen.mp4)
+
+_Tıklayarak videoyu yeni sekmede açıp izleyebilirsiniz._
 
 ## Özellikler
 
@@ -22,13 +19,7 @@ Usulzen, Türk Sanat Musikisi usullerini (ritimlerini) görsel ve işitsel olara
 - **Ton Ayarları:** Düm (Sağ el) ve Tek (Sol el) seslerinin frekanslarını (Hz) anlık olarak ayarlayabilme.
 - **Stüdyo Modu (Manuel Usul Oluşturma):** Kendi usulünüzü vuruş vuruş oluşturun ve oynatın. Yeni usul eklemek için *contents.ts* dosyası içinde uygun formatta manuel olarak ekleme yapmalısınız.
  
-## Proje Videosu
 
-<!-- GitHub README sanitizes many HTML tags; direct <video> may be stripped. Use a clickable thumbnail that opens the raw video. -->
-
-[![Usulzen Video Preview](site-preview/preview.png)](https://raw.githubusercontent.com/ferahfeza/TMU/main/site-preview/Usulzen.mp4)
-
-_Tıklayarak videoyu yeni sekmede açıp izleyebilirsiniz._
 
 ## Kurulum ve Çalıştırma
 

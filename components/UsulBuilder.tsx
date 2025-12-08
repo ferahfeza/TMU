@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Music, Plus, X, Save, Trash2 } from 'lucide-react';
+import { Music, Plus, X, Save, Trash2, Copy, Check } from 'lucide-react';
 import { Usul, Beat, StrokeType } from '../types';
 
 interface UsulBuilderProps {
@@ -28,6 +28,8 @@ const UsulBuilder: React.FC<UsulBuilderProps> = ({ onUsulCreated }) => {
   const [manualName, setManualName] = useState("");
   const [selectedDuration, setSelectedDuration] = useState(1);
   const [beats, setBeats] = useState<Beat[]>([]);
+  const [generatedCode, setGeneratedCode] = useState<string>('');
+  const [isCopied, setIsCopied] = useState(false);
 
   const addBeat = (type: StrokeType, hand: 'right' | 'left' | 'none') => {
     const newBeat: Beat = {
@@ -48,6 +50,29 @@ const UsulBuilder: React.FC<UsulBuilderProps> = ({ onUsulCreated }) => {
       }
   }
 
+  const formatUsulForConstant = (usul: Usul): string => {
+    const beatsString = usul.beats.map(b => {
+      let beatParts = [`      { type: '${b.type}', duration: ${b.duration}`];
+      if (b.hand) {
+        beatParts.push(`, hand: '${b.hand}'`);
+      }
+      return beatParts.join('') + ' }';
+    }).join(',\n');
+
+    // Generate a unique but stable-looking ID for manual pasting
+    const pseudoId = usul.name.toLowerCase().replace(/\s+/g, '_');
+
+    return `{
+  id: '${pseudoId}_${String(Date.now()).slice(-5)}',
+  name: '${usul.name}',
+  timeSignature: '${usul.timeSignature}',
+  description: 'Kullanıcı tarafından oluşturuldu.',
+  beats: [
+${beatsString}
+  ],
+},`;
+  };
+
   const saveManual = () => {
     if (!manualName || beats.length === 0) return;
     
@@ -62,10 +87,17 @@ const UsulBuilder: React.FC<UsulBuilderProps> = ({ onUsulCreated }) => {
       beats
     };
     
+    setGeneratedCode(formatUsulForConstant(newUsul));
     onUsulCreated(newUsul);
     setManualName("");
     setBeats([]);
   };
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(generatedCode);
+    setIsCopied(true);
+    setTimeout(() => setIsCopied(false), 2500);
+  }
 
   return (
     <div className="bg-white rounded-2xl shadow-lg border border-stone-200 overflow-hidden mt-8">
@@ -220,6 +252,32 @@ const UsulBuilder: React.FC<UsulBuilderProps> = ({ onUsulCreated }) => {
             </div>
 
           </div>
+          {generatedCode && (
+            <div className="p-6 border-t border-stone-200 bg-stone-50/50">
+                <div className="max-w-4xl mx-auto">
+                    <div className="flex justify-between items-center mb-3">
+                        <h3 className="text-base font-bold text-stone-600">
+                            Oluşturulan Usul Kodu
+                        </h3>
+                        <button
+                            onClick={handleCopy}
+                            className={`px-4 py-2 text-xs font-bold rounded-lg transition-all flex items-center gap-2 ${isCopied ? 'bg-green-600 text-white' : 'bg-stone-200 text-stone-700 hover:bg-stone-300'}`}
+                        >
+                            {isCopied ? <Check size={14} /> : <Copy size={14} />}
+                            {isCopied ? 'Kopyalandı!' : 'Kodu Kopyala'}
+                        </button>
+                    </div>
+                    <textarea
+                        readOnly
+                        className="w-full h-56 p-4 font-mono text-sm bg-stone-800 text-stone-100 rounded-xl border border-stone-600 focus:ring-2 focus:ring-amber-500 outline-none resize-none shadow-inner"
+                        value={generatedCode}
+                    />
+                    <p className="text-xs text-stone-500 mt-3 text-center">
+                        Bu kodu kopyalayıp projenizdeki <code>constants.ts</code> dosyasındaki <code>DEFAULT_USULS</code> dizisine ekleyebilirsiniz.
+                    </p>
+                </div>
+            </div>
+          )}
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ export const DEFAULT_USULS: Usul[] = [
     id: 'sofyan',
     name: 'Sofyan',
     timeSignature: '4/4',
-    description: 'Dört zamanlı basit bir usuldür. Genellikle ilahilerde ve yürük şarkılarda kullanılır.',
+    description: "Dört zamanlı basit bir usuldür. Genellikle ilahilerde ve yürük şarkılarda kullanılır.",
     beats: [
       { type: 'Düm', duration: 1 },
       { type: 'Te', duration: 0.5  },
@@ -18,7 +18,7 @@ export const DEFAULT_USULS: Usul[] = [
     id: 'semai',
     name: 'Semâî',
     timeSignature: '3/4',
-    description: 'Üç zamanlı bir usuldür. Vals ritmine benzer.',
+    description: "Üç zamanlı bir usuldür. Vals ritmine benzer.",
     beats: [
       { type: 'Düm', duration: 1 },
       { type: 'Tek', duration: 1 },
@@ -30,7 +30,7 @@ export const DEFAULT_USULS: Usul[] = [
     id: 'duyek',
     name: 'Düyek',
     timeSignature: '8/4',
-    description: 'Sekiz zamanlıdır. Türk musikisinde en çok kullanılan usullerden biridir.',
+    description: "Sekiz zamanlıdır. Türk musikisinde en çok kullanılan usullerden biridir.",
     beats: [
       { type: 'Düm', duration: 1 },
       { type: 'Te', duration: 0.5 },
@@ -48,8 +48,8 @@ export const DEFAULT_USULS: Usul[] = [
   {
     id: 'aksak',
     name: 'Aksak',
-    timeSignature: '9/4',
-    description: 'Dokuz zamanlı, kıvrak bir usuldür.',
+    timeSignature: '9/8',
+    description: "Dokuz zamanlı, kıvrak bir usuldür.",
     beats: [
       { type: 'Düm', duration: 1 },
       { type: 'Te', duration: 0.5 },
@@ -63,7 +63,7 @@ export const DEFAULT_USULS: Usul[] = [
     id: 'curcuna',
     name: 'Curcuna',
     timeSignature: '10/8',
-    description: 'On zamanlı, hareketli bir usuldür.',
+    description: "On zamanlı, hareketli bir usuldür.",
     beats: [
       { type: 'Düm', duration: 1 },
       { type: 'Te', duration: 0.5 },
@@ -77,7 +77,7 @@ export const DEFAULT_USULS: Usul[] = [
     id: 'yuruk-semai',
     name: 'Yürük Semâî',
     timeSignature: '6/8',
-    description: 'Türk mûsikisi usul sisteminde altı zamanlı küçük bir usuldür. Bu usul üç adet iki zamanın veya iki adet üç zamanın, diğer bir ifadeyle üç nîm-sofyanın veya iki semâinin birbirine eklenmesiyle meydana gelmiştir (2 + 2 + 2 = 6 veya 3 + 3 = 6). Yürük semâi usulünün bu isme uygun olan mertebesi 6/8’lik mertebedir.',
+    description: "Türk mûsikisi usul sisteminde altı zamanlı küçük bir usuldür. Bu usul üç adet iki zamanın veya iki adet üç zamanın, diğer bir ifadeyle üç nîm-sofyanın veya iki semâinin birbirine eklenmesiyle meydana gelmiştir (2 + 2 + 2 = 6 veya 3 + 3 = 6). Yürük semâi usulünün bu isme uygun olan mertebesi 6/8’lik mertebedir.",
     beats: [
       { type: 'Düm', duration: 1 },
       { type: 'Tek', duration: 1 },
@@ -92,7 +92,7 @@ export const DEFAULT_USULS: Usul[] = [
     id: 'devri-revan',
     name: 'Devr-i Revân',
     timeSignature: '14/8',
-    description: 'On dört zamanlı, Klasik Türk Musikisi ve Mevlevi ayinlerinde sıkça kullanılan köklü bir usuldür.',
+    description: "On dört zamanlı, Klasik Türk Musikisi ve Mevlevi ayinlerinde sıkça kullanılan köklü bir usuldür.",
     beats: [
       { type: 'Düm', duration: 1 },
       { type: 'Te', duration: 1 },
@@ -110,5 +110,62 @@ export const DEFAULT_USULS: Usul[] = [
       { type: 'Tek', duration: 1 },
       { type: 'Ka', duration: 1 },
     ]
-  }
+  },
+  {
+  id: 'firenkçin_74739',
+  name: 'Firenkçin',
+  timeSignature: '12/8',
+  description: "Firenkçin usulü, Türk müziğinde çok nadir kullanılan usul çeşididir. On iki zamanlı bir küçük usul olup, iki tane üç zaman ile üç tane iki zamanın, yani iki semâi ve üç nîm-sofyan usulünün birleşmesinden meydana gelmiştir. Pratikte 12/8’lik ve 12/4’lük ritimlerde çalınır. Özellikle ikinci mertebesi daha ağır olduğu için son nîm-sofyan kısmı \"velvelelendirilerek\" (süslemeli vuruşlarla) vurulabilir.",
+  beats: [
+      { type: 'Düm', duration: 2, hand: 'right' },
+      { type: 'Düm', duration: 1, hand: 'right' },
+      { type: 'Te', duration: 0.5, hand: 'left' },
+      { type: 'Ke', duration: 0.5, hand: 'left' },
+      { type: 'Tek', duration: 1, hand: 'left' },
+      { type: 'Ka', duration: 1, hand: 'left' },
+      { type: 'Düm', duration: 2, hand: 'right' },
+      { type: 'Düm', duration: 1, hand: 'right' },
+      { type: 'Te', duration: 0.5, hand: 'left' },
+      { type: 'Ke', duration: 0.5, hand: 'left' },
+      { type: 'Tek', duration: 1, hand: 'left' },
+      { type: 'Ka', duration: 1, hand: 'left' },
+      { type: 'Dü', duration: 0.5, hand: 'right' },
+      { type: 'Me', duration: 0.5, hand: 'left' },
+      { type: 'Dü', duration: 0.5, hand: 'right' },
+      { type: 'Me', duration: 0.5, hand: 'left' },
+      { type: 'Te', duration: 0.5, hand: 'left' },
+      { type: 'Ke', duration: 0.5, hand: 'left' },
+      { type: 'Te', duration: 0.5, hand: 'left' },
+      { type: 'Ke', duration: 0.5, hand: 'left' },
+      { type: 'Dü', duration: 0.5, hand: 'right' },
+      { type: 'Me', duration: 0.5, hand: 'left' },
+      { type: 'Dü', duration: 0.5, hand: 'right' },
+      { type: 'Me', duration: 0.5, hand: 'left' },
+      { type: 'Te', duration: 0.5, hand: 'left' },
+      { type: 'Ke', duration: 0.5, hand: 'left' },
+      { type: 'Te', duration: 0.5, hand: 'left' },
+      { type: 'Ke', duration: 0.5, hand: 'left' },
+      { type: 'Tek', duration: 1, hand: 'left' },
+      { type: 'Ka', duration: 1, hand: 'left' },
+      { type: 'Tek', duration: 1, hand: 'left' },
+      { type: 'Ka', duration: 1, hand: 'left' }
+  ],
+},
+{
+  id: 'müdemmen_78829',
+  name: 'Müsemmen',
+  timeSignature: '8/8',
+  description: 'Bu usul sekiz zamanlıdır. 8/8\'lik mertebesi vardır. Şarkılarda, türkülerde, ilahilerde ve oyun havalarında kullanılmıştır..',
+  beats: [
+      { type: 'Düm', duration: 1, hand: 'right' },
+      { type: 'Tek', duration: 1, hand: 'left' },
+      { type: 'Ka', duration: 1, hand: 'left' },
+      { type: 'Tek', duration: 1, hand: 'left' },
+      { type: 'Ka', duration: 1, hand: 'left' },
+      { type: 'Tek', duration: 1, hand: 'left' },
+      { type: 'Ka', duration: 1, hand: 'left' },
+      { type: 'Te', duration: 0.5, hand: 'left' },
+      { type: 'Ke', duration: 0.5, hand: 'left' }
+  ],
+},
 ];

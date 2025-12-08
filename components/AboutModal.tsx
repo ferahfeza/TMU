@@ -38,7 +38,10 @@ const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
           </div>
 
           <p className="text-sm text-stone-500 italic flex items-center gap-1 pt-2 border-t border-stone-100">
-            Kültür mirâsımıza katkı sağlamak amacıyla geliştirilmiştir. <Heart size={14} className="text-red-500 fill-current ml-1"/>
+            Kültür mirâsımıza katkı sağlamak amacıyla geliştirilmiştir.<br/> Ali İhsan Çanakoğlu - 2025. <Heart size={14} className="text-red-500 fill-current ml-1"/>
+          </p>
+          <p className="text-sm text-stone-500 italic flex items-center gap-1 pt-2 border-t border-stone-100">
+           E-posta: <a href="mailto:aihsan.canakoglu@dpu.edu.tr" className="underline">aihsan.canakoglu@dpu.edu.tr</a>
           </p>
         </div>
         
